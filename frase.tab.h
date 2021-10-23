@@ -186,11 +186,10 @@ typedef
 
 
  #line 169 "/usr/share/bison++/bison.h"
-#define	ARTICULO	258
-#define	NOMBRE	259
-#define	ADJETIVO	260
-#define	PREPOSICION	261
-#define	VERBO	262
+#define	USUARIO	258
+#define	ARROBA	259
+#define	DOMINIO	260
+#define	DCOM	261
 
 
 #line 169 "/usr/share/bison++/bison.h"
@@ -239,11 +238,10 @@ public:
   /* static const int token ... */
   
  #line 212 "/usr/share/bison++/bison.h"
-static const int ARTICULO;
-static const int NOMBRE;
-static const int ADJETIVO;
-static const int PREPOSICION;
-static const int VERBO;
+static const int USUARIO;
+static const int ARROBA;
+static const int DOMINIO;
+static const int DCOM;
 
 
 #line 212 "/usr/share/bison++/bison.h"
@@ -252,11 +250,10 @@ static const int VERBO;
   enum YY_parse_ENUM_TOKEN { YY_parse_NULL_TOKEN=0
   
  #line 215 "/usr/share/bison++/bison.h"
-	,ARTICULO=258
-	,NOMBRE=259
-	,ADJETIVO=260
-	,PREPOSICION=261
-	,VERBO=262
+	,USUARIO=258
+	,ARROBA=259
+	,DOMINIO=260
+	,DCOM=261
 
 
 #line 215 "/usr/share/bison++/bison.h"

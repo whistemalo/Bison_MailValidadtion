@@ -1,12 +1,12 @@
 %{
 #include <string.h>
-#include "frase.tab.h"
+#include "contra.tab.h"
 %}
 %%
 ([a-zA-Z])+[0-9]+ {return USUARIO;}
 
 @+ {return ARROBA;}
-as
+
 gmail+|hotmail+|yahoo+ |
 outlook+|mail+|udb+ {
  return DOMINIO;
