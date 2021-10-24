@@ -7,10 +7,10 @@
 %token USUARIO ARROBA DOMINIO DCOM
 
 %%
-dialogo : frase
+login: '\n' | frase | mail login | contra | contra login
 ;
 
-frase :USUARIO ARROBA DOMINIO DCOM '\n'
+mail : '\n' | USUARIO ARROBA DOMINIO DCOM '\n'
  {printf("\n>> Email Correcto\n");}
 ;
 

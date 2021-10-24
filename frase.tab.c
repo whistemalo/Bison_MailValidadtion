@@ -431,7 +431,7 @@ YY_parse_CONSTRUCTOR_CODE;
  #line 352 "/usr/share/bison++/bison.cc"
 
 
-#define	YYFINAL		9
+#define	YYFINAL		11
 #define	YYFLAG		-32768
 #define	YYNTBASE	8
 
@@ -469,18 +469,19 @@ static const char yytranslate[] = {     0,
 
 #if YY_parse_DEBUG != 0
 static const short yyprhs[] = {     0,
-     0,     2
+     0,     2,     4,     7,     9
 };
 
-static const short yyrhs[] = {     9,
-     0,     3,     4,     5,     6,     7,     0
+static const short yyrhs[] = {     7,
+     0,     9,     0,     9,     8,     0,     7,     0,     3,     4,
+     5,     6,     7,     0
 };
 
 #endif
 
 #if (YY_parse_DEBUG != 0) || defined(YY_parse_ERROR_VERBOSE) 
 static const short yyrline[] = { 0,
-    10,    13
+    10,    10,    10,    13,    13
 };
 
 static const char * const yytname[] = {   "$","error","$illegal.","USUARIO",
@@ -489,39 +490,41 @@ static const char * const yytname[] = {   "$","error","$illegal.","USUARIO",
 #endif
 
 static const short yyr1[] = {     0,
-     8,     9
+     8,     8,     8,     9,     9
 };
 
 static const short yyr2[] = {     0,
-     1,     5
+     1,     1,     2,     1,     5
 };
 
 static const short yydefact[] = {     0,
-     0,     1,     0,     0,     0,     2,     0,     0,     0
+     0,     4,     2,     0,     3,     0,     0,     5,     0,     0,
+     0
 };
 
-static const short yydefgoto[] = {     7,
-     2
+static const short yydefgoto[] = {     5,
+     3
 };
 
 static const short yypact[] = {    -3,
-    -2,-32768,    -4,    -1,     0,-32768,     3,     4,-32768
+    -2,     1,    -3,     0,-32768,     2,    -4,-32768,     6,     7,
+-32768
 };
 
-static const short yypgoto[] = {-32768,
+static const short yypgoto[] = {     9,
 -32768
 };
 
 
-#define	YYLAST		7
+#define	YYLAST		9
 
 
 static const short yytable[] = {     1,
-     4,     3,     8,     9,     5,     0,     6
+    -1,     4,     8,     2,     6,    10,    11,     7,     9
 };
 
 static const short yycheck[] = {     3,
-     5,     4,     0,     0,     6,    -1,     7
+     0,     4,     7,     7,     5,     0,     0,     6,     0
 };
 
 #line 352 "/usr/share/bison++/bison.cc"
@@ -1017,7 +1020,7 @@ YYLABEL(yyreduce)
 
   switch (yyn) {
 
-case 2:
+case 5:
 #line 14 "frase.y"
 {printf("\n>> Email Correcto\n");;
     break;}
