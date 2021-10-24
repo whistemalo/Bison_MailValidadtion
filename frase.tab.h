@@ -190,9 +190,8 @@ typedef
 #define	ARROBA	259
 #define	DOMINIO	260
 #define	DCOM	261
-#define	NUM	262
-#define	SYM	263
-#define	LETRAS	264
+#define	TODO	262
+#define	LETRAS	263
 
 
 #line 169 "/usr/share/bison++/bison.h"
@@ -245,8 +244,7 @@ static const int USUARIO;
 static const int ARROBA;
 static const int DOMINIO;
 static const int DCOM;
-static const int NUM;
-static const int SYM;
+static const int TODO;
 static const int LETRAS;
 
 
@@ -260,9 +258,8 @@ static const int LETRAS;
 	,ARROBA=259
 	,DOMINIO=260
 	,DCOM=261
-	,NUM=262
-	,SYM=263
-	,LETRAS=264
+	,TODO=262
+	,LETRAS=263
 
 
 #line 215 "/usr/share/bison++/bison.h"

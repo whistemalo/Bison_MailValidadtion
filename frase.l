@@ -18,7 +18,7 @@ outlook+|mail+|udb+ {
 ([a-zA-Z])+ {return LETRAS;}
 
 
-([a-zA-Z])+[0-9]+[!,#,$,%,&,*] {return NUM;}
+([a-zA-Z])+[0-9]+[!,#,$,%,&,*] {return TODO;}
 
 \n {
  return ('\n');
