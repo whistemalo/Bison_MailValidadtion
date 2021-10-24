@@ -4,14 +4,24 @@
 #define YYSTYPE char*
 %}
 
-%token USUARIO ARROBA DOMINIO DCOM
+%token USUARIO ARROBA DOMINIO DCOM TODO LETRAS
 
 %%
-login: '\n' | frase | mail login | contra | contra login
+login: '\n' | mailPass | mailPass login 
 ;
 
-mail : '\n' | USUARIO ARROBA DOMINIO DCOM '\n'
+mailPass : passInit | mailInit ;
+
+mailInit : USUARIO mail'\n'
  {printf("\n>> Email Correcto\n");}
+;
+
+mail : ARROBA DOMINIO DCOM
+;
+
+passInit : USUARIO '\n' {printf("\n>> Contraseña Media\n");}
+         | LETRAS '\n' {printf("\n>> Contraseña Basica\n");}
+         | TODO '\n' {printf("\n>> Contraseña Avanzada\n");}
 ;
 
 %%

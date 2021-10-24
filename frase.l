@@ -15,6 +15,11 @@ outlook+|mail+|udb+ {
  return DCOM;
 }
 
+([a-zA-Z])+ {return LETRAS;}
+
+
+([a-zA-Z])+[0-9]+[!,#,$,%,&,*] {return NUM;}
+
 \n {
  return ('\n');
   }
